@@ -1,0 +1,10 @@
+[Unit]
+Description=Flask app service
+After=network.target
+
+[Service]
+WorkingDirectory=C:\Users\User\PycharmProjects\hm_23\
+ExecStart=C:\Users\User\PycharmProjects\hm_23\venv\bin\python run.py
+
+[Install]
+WantedBy=multi-user.target
