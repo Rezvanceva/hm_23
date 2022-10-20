@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=C:\Users\User\PycharmProjects\hm_23\
-ExecStart=C:\Users\User\PycharmProjects\hm_23\venv\bin\python run.py
+ExecStart=C:\Users\User\PycharmProjects\hm_23\venv\bin\python -m gunicorn run:app -b 0.0.0.0:80 -w 4
 
 [Install]
 WantedBy=multi-user.target
